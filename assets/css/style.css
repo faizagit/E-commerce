@@ -98,20 +98,15 @@
   margin-bottom: 40px;
   width: 95%;
 }
-.viewall {
-  color: #e61e64;
-  padding-top: 58px;
-  padding-left: 310px;
-  padding-bottom: 5px;
-}
 .img1 {
   width: 400px;
-  height: 180px;
+  height: 260px;
   padding-left: 21px;
+  padding-top: 90px;
 }
 .img1-2 {
   width: 400px;
-  height: 170px;
+  height: 180px;
   padding-top: 10px;
   padding-left: 21px;
 }
@@ -194,4 +189,38 @@
   width: 100px;
   padding: 20px;
   left: 1260px;
+}
+
+/* buku pilihan */
+.title-bukupilihan {
+  margin-top: 90px;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+}
+.btn-buku {
+  padding-right: 200px;
+
+  border-bottom: 1px #151515 solid;
+}
+.btn-buku2 {
+  padding-right: 112px;
+
+  border-bottom: 1px #151515 solid;
+}
+.btn-buku3 {
+  padding-right: 67px;
+
+  border-bottom: 1px #151515 solid;
+}
+
+.product-filter {
+  display: flex;
+  justify-content: space-between;
+}
+.bi-search {
+  position: absolute;
+  right: 300px;
+  top: 25px;
+  color: #6d6d6d;
 }

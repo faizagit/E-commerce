@@ -44,18 +44,43 @@
         </div>
       </div>
       <div class="col-md-5" style="padding-top: 15px">
-        <form class="form-search">
-          <input class="searching form-control me-2" type="search" placeholder="Cari Produk, Judul Buku, Penulis" aria-label="Search" />
-        </form>
+        <form class="form-search"><input class="searching form-control me-2" type="search" placeholder="Cari Produk, Judul Buku, Penulis" aria-label="Search" /> <i class="bi bi-search"></i></form>
       </div>
       <div class="col-md-1" style="padding-top: 15px">
-        <i class="akun bi bi-person-circle"></i>
+        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="akun bi bi-person-circle"></i></a>
       </div>
       <div class="col-md-1" style="padding-top: 15px">
         <i class="keranjang bi bi-cart2"></i>
       </div>
     </nav>
     <!-- tutup navbar -->
+
+    <!-- account -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input style="border: none; border-bottom: 1px solid" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 text-center">
+              <a href="#">Lupa Kata Sandi</a>
+            </div>
+            <button type="submit" class="btn btn-secondary w-100 text-center">Masuk</button>
+            <div class="mb-3 mt-3">
+              <p class="text-center">Belum mendaftar? <a href="daftar.html">Daftar</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- tutup account -->
 
     <!-- carousel -->
     <div class="carousel d-flex">
@@ -86,7 +111,6 @@
         </button>
       </div>
       <div class="without-carousel">
-        <a href="#" style="color: transparent"><h6 class="viewall">Lihat Semua</h6></a>
         <img class="img1" src="assets/image/without-carousel1.jpg" alt="" />
         <img class="img1-2" src="assets/image/without-carousel2.jpg" alt="" />
       </div>
@@ -96,7 +120,7 @@
     <!-- icon -->
     <div class="icon-kategori">
       <div class="buku-pilihan">
-        <img src="assets/image/Icon-bukupilihan.png" alt="" style="padding-right: 20px; padding-left: 20px" />
+        <a href="bukupilihan.html"><img src="assets/image/Icon-bukupilihan.png" alt="" style="padding-right: 20px; padding-left: 20px" /></a>
         <h6 class="text-icon text-center">Buku Pilihan</h6>
       </div>
       <div class="ebook">
