@@ -224,3 +224,45 @@
   top: 25px;
   color: #6d6d6d;
 }
+.author-buku1 {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Nunito, serif;
+  color: #6d6d6d;
+}
+.judul-buku1 {
+  font-family: Nunito, serif;
+  font-size: 24px;
+  color: #151515;
+}
+.link {
+  text-decoration: none;
+  color: #151515;
+}
+.daftar-format {
+  flex: 0 0 auto;
+  font-family: Nunito, serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  border-bottom: #cccaca 1px solid;
+}
+.isi-desc {
+  line-height: 24px;
+  color: #151515;
+  white-space: pre-line;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.buku1 {
+  justify-content: space-evenly;
+}
+.detail {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
