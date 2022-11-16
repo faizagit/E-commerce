@@ -358,7 +358,48 @@ input[type='submit'] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+.text-keranjang {
+  padding-top: 100px;
+  padding-bottom: 30px;
 
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.cart {
+  width: 600px;
+}
+.pesanan {
+  padding-left: 115px;
+}
+.title-pesanan {
+  padding-left: 10px;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+.price {
+  padding-left: 10px;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #5a5a5a;
+}
+.title-detail {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.text-detail {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+.harga-detail {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #0060ae;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

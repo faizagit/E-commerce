@@ -8,16 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-
     <!-- my css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- my js -->
-    <link rel="stylesheet" href="assets/js/script.js" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 
-    <title>Halaman Utama | Kutu Buku</title>
+    <title>Keranjang | KutuBuku</title>
   </head>
   <body>
     <img class="wa-icon fixed-bottom" src="assets/image/icon-wa-removebg-preview (1).png" alt="" />
@@ -59,267 +56,85 @@
         <div class="col right-category">jfdwjnedownmed</div>
       </div>
     </nav>
-    <!-- tutup navbar -->
 
-    <!-- account -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content p-3">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input style="border: none; border-bottom: 1px solid" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="exampleInputPassword1" />
-            </div>
-            <div class="mb-3 text-center">
-              <a href="#">Lupa Kata Sandi</a>
-            </div>
-            <button type="submit" class="btn btn-secondary w-100 text-center">Masuk</button>
-            <div class="mb-3 mt-3">
-              <p class="text-center">Belum mendaftar? <a href="daftar.html">Daftar</a></p>
-            </div>
-          </form>
+    <div class="container">
+      <h4 class="text-keranjang">Keranjang</h4>
+    </div>
+    <div class="d-flex">
+      <div class="delete-keranjang" style="padding-left: 115px; padding-bottom: 20px">
+        <div class="cart card card-body shadow-sm p-3 bg-body rounded">
+          <a href="#" class="card-link" style="padding-left: 450px; text-decoration: none; color: #000; font-family: 'Nunito', sans-serif; font-weight: 600; font-size: 15px">Hapus beberapa</a>
         </div>
       </div>
     </div>
-
-    <!-- tutup account -->
-
-    <!-- carousel -->
-    <div class="carousel d-flex">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/image/carousel1.jpg" class="d-block" alt="carousel1" style="height: 350px; width: 100%" />
+    <div class="pesanan d-flex" style="padding-bottom: 100px; border-bottom: ">
+      <div class="card cart shadow-sm p-3 bg-body rounded">
+        <div class="img-deskripsi">
+          <div class="card-body">
+            <a style="font-family: 'Nunito', sans-serif; font-weight: 600; color: #5a5a5a">Pesanan 1</a>
           </div>
-          <div class="carousel-item">
-            <img src="assets/image/carousel2.jpg" class="d-block w-100" alt="carousel2" style="height: 350px" />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/image/carousel3.jpg" class="d-block w-100" alt="carrousel3" style="height: 350px" />
-          </div>
-        </div>
-        <button class="carousel-control-prev pt-5" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next pt-5" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="without-carousel">
-        <img class="img1" src="assets/image/without-carousel1.jpg" alt="" />
-        <img class="img1-2" src="assets/image/without-carousel2.jpg" alt="" />
-      </div>
-    </div>
-    <!-- tutup carousel -->
-
-    <!-- icon -->
-    <div class="icon-kategori">
-      <div class="buku-pilihan">
-        <a href="bukupilihan.html"><img src="assets/image/Icon-bukupilihan.png" alt="" style="padding-right: 20px; padding-left: 20px" /></a>
-        <h6 class="text-icon text-center">Buku Pilihan</h6>
-      </div>
-      <div class="ebook">
-        <img src="assets/image/Icon-ebook.png" alt="" style="padding-right: 20px; padding-left: 20px" />
-        <h6 class="text-icon text-center">Ebook</h6>
-      </div>
-      <div class="alat-tulis">
-        <img src="assets/image/Icon-alattulis.png" alt="" style="padding-right: 20px; padding-left: 20px" />
-        <h6 class="text-icon text-center">Alat Tulis</h6>
-      </div>
-      <div class="mainan">
-        <img src="assets/image/Icon-mainan.png" alt="" style="padding-right: 20px; padding-left: 20px" />
-        <h6 class="text-icon text-center">Mainan</h6>
-      </div>
-    </div>
-
-    <!-- tutup icon -->
-
-    <!-- rekomendasi -->
-    <p class="text-recommend">Rekomendasi Kutu Buku Untukmu</p>
-    <div class="recommended">
-      <div class="row row-cols-1 row-cols-md-6 g-3">
-        <a href="lovefromatoz.html" style="text-decoration: none">
-          <div class="col">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-              <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
-              <div class="card-body">
-                <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
-                <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
-                <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
-              </div>
+          <div class="img-pesanan d-flex" style="padding-bottom: 10px; border-bottom: 1px solid #c1c1c1">
+            <img src="assets/image/book1.jpg" alt="" style="width: 85px; height: 130px; padding-left: 20px; padding-bottom: 30px" />
+            <div class="text">
+              <p class="title-pesanan ms-1">Love From A to Z</p>
+              <b class="price ms-1">Rp 93.000</b>
+            </div>
+            <div class="minus" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
+              <button id="minus" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+            </div>
+            <div class="input" style="padding-top: 20px">
+              <input id="input" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
+            </div>
+            <div class="plus" style="font-size: 20px; padding-top: 20px">
+              <button id="plus" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
+            </div>
+            <div class="price-total" style="padding-top: 13px; padding-left: 90px">
+              <p style="font-size: 14px; color: #0060ae"><b>Rp 93.000</b></p>
+              <a style="font-size: 14px"><i class="bi bi-trash3 ms-1"></i>Hapus</a>
             </div>
           </div>
-        </a>
-        <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book2.jpg" class="card-img-top" alt="..." style="height: 200px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Gosho Aoyama</p>
-              <h5 class="card-title" style="font-size: 14px">Detectif Conan</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 68.000</b></h5>
+          <div class="img-pesanan d-flex" style="padding-top: 40px">
+            <img src="assets/image/book1.jpg" alt="" style="width: 85px; height: 130px; padding-left: 20px; padding-bottom: 30px" />
+            <div class="text">
+              <p class="title-pesanan ms-1">Love From A to Z</p>
+              <b class="price ms-1">Rp 93.000</b>
+            </div>
+            <div class="minus" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
+              <button id="minus" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+            </div>
+            <div class="input" style="padding-top: 20px">
+              <input id="input" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
+            </div>
+            <div class="plus" style="font-size: 20px; padding-top: 20px">
+              <button id="plus" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
+            </div>
+            <div class="price-total" style="padding-top: 13px; padding-left: 90px">
+              <p style="font-size: 14px; color: #0060ae"><b>Rp 93.000</b></p>
+              <a style="font-size: 14px"><i class="bi bi-trash3 ms-1"></i>Hapus</a>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book3.jpg" class="card-img-top" alt="..." style="height: 200px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Haruichi Furudate</p>
-              <h5 class="card-title" style="font-size: 14px">Haikyu S4</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 60.000</b></h5>
-            </div>
-          </div>
+        <div class="total-pesanan d-flex" style="padding-top: 10px; border-top: 1px solid #6e6e6e; justify-content: space-between">
+          <p>Total Pesanan <b>1</b></p>
+          <p><b>Rp 93.000</b></p>
         </div>
-        <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book4.jpeg" class="card-img-top" alt="..." style="height: 200px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Gege Akutami</p>
-              <h5 class="card-title" style="font-size: 14px">Jujutsu Kaisen 0</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 70.000</b></h5>
-            </div>
+      </div>
+      <div class="detail-pesanan ms-3">
+        <div class="card shadow-sm p-3 bg-body rounded" style="width: 500px">
+          <h2 class="title-detail">Rincian Belanja</h2>
+          <div class="harga d-flex" style="justify-content: space-between">
+            <p class="text-detail"><b>Total Biaya Belanja</b></p>
+            <p class="harga-detail">Rp 93.000</p>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book5.jpg" class="card-img-top" alt="..." style="height: 200px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Gege Akutami</p>
-              <h5 class="card-title" style="font-size: 14px">Jujutsu Kaisen 1</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 75.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book6.jpg" class="card-img-top" alt="..." style="height: 200px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Masashi Kishimoto</p>
-              <h5 class="card-title" style="font-size: 14px">Naruto</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 50.000</b></h5>
-            </div>
+          <div class="btn-detail" style="padding-top: 30px">
+            <button class="btn btn-primary w-100" type="submit">Lanjut ke Pembayaran</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- tutup dari rekomendasi -->
-
-    <!-- buku terpopuler -->
-    <h4 class="text-popular">Buku - Buku Terpopuler</h4>
-    <div class="popular">
-      <div class="row row-cols-1 row-cols-md-5 g-4" style="justify-content: space-between">
-        <div class="banner1">
-          <img src="assets/image/banner1.png" class="img-banner1" alt="" />
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-popular.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">James Clear</p>
-              <h5 class="card-title" style="font-size: 14px">Atomic Habits</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 97.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-popular2.jpeg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Henry Manampiring</p>
-              <h5 class="card-title" style="font-size: 14px">Filosofi Teras</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 78.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-popular3.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Yoon Hong Gyun</p>
-              <h5 class="card-title" style="font-size: 14px">How To Respect My Self</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 77.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-popular4.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">DR. Carol S Dweck</p>
-              <h5 class="card-title" style="font-size: 14px">Mindset</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 83.000</b></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- buku novel terpopuler -->
-    <h4 class="text-popular-novel">Novel Paling Laris</h4>
-    <div class="popular-novel">
-      <div class="row row-cols-1 row-cols-md-5 g-4" style="justify-content: space-between">
-        <div class="banner1">
-          <img src="assets/image/banner2.png" class="img-banner1" alt="" />
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-novel1.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Tere Liye</p>
-              <h5 class="card-title" style="font-size: 14px">Hujan</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 89.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-novel2.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Tere Liye</p>
-              <h5 class="card-title" style="font-size: 14px">Matahari Minor</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 95.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-novel3.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Tere Liye</p>
-              <h5 class="card-title" style="font-size: 14px">Bumi</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 103.000</b></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="height: 350px">
-            <img src="assets/image/book-novel4.jpg" class="card-img-top" alt="..." style="height: 220px" />
-            <div class="card-body">
-              <p class="card-text" style="font-size: 12px">Mommy ASF</p>
-              <h5 class="card-title" style="font-size: 14px">Layangan Putus</h5>
-              <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 75.000</b></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Novel terpopuler -->
-
-    <!-- tutup Novel terpopuler -->
 
     <!-- footer -->
-    <div class="footer-top">
+    <div class="footer-top" style="padding-top: 50px">
       <div class="subscribe">
         <p style="padding-top: 40px; padding-left: 40px; padding-bottom: 40px">Kejutan spesial dari kami hanya untukmu</p>
       </div>
@@ -607,7 +422,7 @@
     <script>
       function autocomplete(inp, arr) {
         /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
+    the text field element and an array of possible autocompleted values:*/
         var currentFocus;
         /*execute a function when someone writes in the text field:*/
         inp.addEventListener('input', function (e) {
@@ -643,7 +458,7 @@
                 /*insert the value for the autocomplete text field:*/
                 inp.value = this.getElementsByTagName('input')[0].value;
                 /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
+                (or any other open lists of autocompleted values:*/
                 closeAllLists();
               });
               a.appendChild(b);
@@ -656,14 +471,14 @@
           if (x) x = x.getElementsByTagName('div');
           if (e.keyCode == 40) {
             /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
+          increase the currentFocus variable:*/
             currentFocus++;
             /*and and make the current item more visible:*/
             addActive(x);
           } else if (e.keyCode == 38) {
             //up
             /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
+          decrease the currentFocus variable:*/
             currentFocus--;
             /*and and make the current item more visible:*/
             addActive(x);
@@ -694,7 +509,7 @@
         }
         function closeAllLists(elmnt) {
           /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
+      except the one passed as an argument:*/
           var x = document.getElementsByClassName('autocomplete-items');
           for (var i = 0; i < x.length; i++) {
             if (elmnt != x[i] && elmnt != inp) {
@@ -710,6 +525,23 @@
     </script>
     <script>
       autocomplete(document.getElementById('myInput'), countries);
+    </script>
+    <script>
+      const minusButton = document.getElementById('minus');
+      const plusButton = document.getElementById('plus');
+      const inputField = document.getElementById('input');
+
+      minusButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        const currentValue = Number(inputField.value) || 1;
+        inputField.value = currentValue - 1;
+      });
+
+      plusButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        const currentValue = Number(inputField.value) || 0;
+        inputField.value = currentValue + 1;
+      });
     </script>
   </body>
 </html>
