@@ -400,6 +400,48 @@ input[type='submit'] {
   font-weight: 600;
   color: #0060ae;
 }
+.title-checkout {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.alamat {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.text-alamat {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.btn-alamat {
+  padding-left: 15px;
+  padding-bottom: 50px;
+}
+.text-metode {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.kode-promo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.total-biaya {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.total-belanja {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+}
+.biaya-pengiriman {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+
+  border-bottom: 1px solid #a5a5a5;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
