@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- my js -->
-    <link rel="stylesheet" href="assets/js/script.js" />
+    <script src="assets/js/script.js"></script>
 
     <title>Halaman Utama | Kutu Buku</title>
   </head>
@@ -49,11 +49,21 @@
       <div class="col-md-1" style="padding-top: 15px">
         <a href="keranjang.html"><i class="keranjang bi bi-cart2"></i></a>
       </div>
-      <ul class="category_menu  row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample"">
+      <ul class="category_menu row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
         <li>
           <a href="#">
             <span class="cat_name">Womens Fashion</span>
           </a>
+          <a href="#">
+            <span class="cat_name2">Men Fashion</span>
+          </a>
+          <a href="#"> <span class="cat_name3">Phones</span><br /> </a>
+          <a href="#">
+            <span class="cat_name4">Home Appliences</span>
+          </a>
+          <a href="#">
+            <span class="cat_name5">Computing</span>
+          </a>
           <ul class="right_sliding">
             <li>
               <a href="#">Women1</a>
@@ -72,91 +82,24 @@
             </li>
           </ul>
         </li>
+      </ul>
+      <ul class="category_menu2 row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
         <li>
-          <a href="#">
-            <span class="cat_name">Men Fashion</span>
-          </a>
-          <ul class="right_sliding">
+          <ul class="right_sliding2">
             <li>
-              <a href="#">Men</a>
+              <a href="#">laki1</a>
             </li>
             <li>
-              <a href="#">Men</a>
+              <a href="#">laki1</a>
             </li>
             <li>
-              <a href="#">Men</a>
+              <a href="#">laki1</a>
             </li>
             <li>
-              <a href="#">Men</a>
+              <a href="#">laki1</a>
             </li>
             <li>
-              <a href="#">Men</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <span class="cat_name">Phones</span>
-          </a>
-          <ul class="right_sliding">
-            <li>
-              <a href="#">Phones</a>
-            </li>
-            <li>
-              <a href="#">Phones</a>
-            </li>
-            <li>
-              <a href="#">Phones</a>
-            </li>
-            <li>
-              <a href="#">Phones</a>
-            </li>
-            <li>
-              <a href="#">Phones</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <span class="cat_name">Home Appliences</span>
-          </a>
-          <ul class="right_sliding">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <span class="cat_name">Computing</span>
-          </a>
-          <ul class="right_sliding">
-            <li>
-              <a href="#">Computing</a>
-            </li>
-            <li>
-              <a href="#">Computing</a>
-            </li>
-            <li>
-              <a href="#">Computing</a>
-            </li>
-            <li>
-              <a href="#">Computing</a>
-            </li>
-            <li>
-              <a href="#">Computing</a>
+              <a href="#">laki1</a>
             </li>
           </ul>
         </li>
@@ -184,12 +127,13 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="exampleInputPassword1" />
+              <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="myInputPw4" />
             </div>
+            <input type="checkbox" onclick="myFunction()" />Show Password
             <div class="mb-3 text-center">
               <a href="#">Lupa Kata Sandi</a>
             </div>
-            <button type="submit" class="btn btn-secondary w-100 text-center">Masuk</button>
+            <button type="submit" class="btn btn-primary w-100 text-center">Masuk</button>
             <div class="mb-3 mt-3">
               <p class="text-center">Belum mendaftar? <a href="daftar.html">Daftar</a></p>
             </div>
@@ -822,6 +766,16 @@
     </script>
     <script>
       autocomplete(document.getElementById('myInput'), countries);
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myInputPw4');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+      }
     </script>
   </body>
 </html>

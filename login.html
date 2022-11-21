@@ -41,8 +41,9 @@
     </div>
     <div class="mb-3 container" style="width: 45%">
       <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="exampleInputPassword1" />
+      <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="myInputPw3" />
     </div>
+    <div class="showpassword"><input type="checkbox" onclick="myFunction()" />Show Password</div>
     <div class="container" style="display: flex; justify-content: center">
       <button type="submit" class="btn btn-secondary text-center" style="width: 30%">Masuk</button>
     </div>
@@ -50,7 +51,16 @@
       <p class="text-center">Belum mendaftar? <a href="daftar.html">Daftar</a></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myInputPw3');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+      }
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

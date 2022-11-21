@@ -43,6 +43,7 @@
           <li><a class="dropdown-item text-danger" href="#">Keluar</a></li>
         </ul>
       </div> -->
+
       <div class="col-md-1" style="padding-top: 15px">
         <i class="keranjang bi bi-cart2"></i>
       </div>
@@ -56,6 +57,32 @@
         <div class="col right-category">jfdwjnedownmed</div>
       </div>
     </nav>
+
+    <!-- account -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input style="border: none; border-bottom: 1px solid" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input style="border: none; border-bottom: 1px solid" type="password" class="form-control" id="myInputPw" />
+            </div>
+            <input type="checkbox" onclick="myFunction()" />Show Password
+            <div class="mb-3 text-center">
+              <a href="#">Lupa Kata Sandi</a>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 text-center">Masuk</button>
+            <div class="mb-3 mt-3">
+              <p class="text-center">Belum mendaftar? <a href="daftar.html">Daftar</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <h4 class="text-keranjang">Keranjang</h4>
@@ -99,14 +126,14 @@
               <p class="title-pesanan ms-1">Love From A to Z</p>
               <b class="price ms-1">Rp 93.000</b>
             </div>
-            <div class="minus" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
-              <button id="minus" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+            <div class="minus2" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
+              <button id="minus2" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
             </div>
-            <div class="input" style="padding-top: 20px">
-              <input id="input" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
+            <div class="input2" style="padding-top: 20px">
+              <input id="input2" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
             </div>
-            <div class="plus" style="font-size: 20px; padding-top: 20px">
-              <button id="plus" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
+            <div class="plus2" style="font-size: 20px; padding-top: 20px">
+              <button id="plus2" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
             </div>
             <div class="price-total" style="padding-top: 13px; padding-left: 90px">
               <p style="font-size: 14px; color: #0060ae"><b>Rp 93.000</b></p>
@@ -134,7 +161,7 @@
     </div>
 
     <!-- footer -->
-    <div class="footer-top" style="padding-top: 50px">
+    <div class="footer-top">
       <div class="subscribe">
         <p style="padding-top: 40px; padding-left: 40px; padding-bottom: 40px">Kejutan spesial dari kami hanya untukmu</p>
       </div>
@@ -542,6 +569,33 @@
         const currentValue = Number(inputField.value) || 0;
         inputField.value = currentValue + 1;
       });
+    </script>
+    <script>
+      const minusButton2 = document.getElementById('minus2');
+      const plusButton2 = document.getElementById('plus2');
+      const inputField2 = document.getElementById('input2');
+
+      minusButton2.addEventListener('click', (event) => {
+        event.preventDefault();
+        const currentValue2 = Number(inputField2.value) || 1;
+        inputField2.value = currentValue2 - 1;
+      });
+
+      plusButton2.addEventListener('click', (event) => {
+        event.preventDefault();
+        const currentValue2 = Number(inputField2.value) || 0;
+        inputField2.value = currentValue2 + 1;
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myInputPw');
+        if (x.type === 'password') {
+          x.type = 'text';
+        } else {
+          x.type = 'password';
+        }
+      }
     </script>
   </body>
 </html>
