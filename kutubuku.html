@@ -52,10 +52,10 @@
       <ul class="category_menu row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
         <li>
           <a href="#">
-            <span class="cat_name">Womens Fashion</span>
+            <span class="cat_name" onclick="myFunction()">Womens Fashion</span>
           </a>
           <a href="#">
-            <span class="cat_name2">Men Fashion</span>
+            <span class="cat_name2" onclick="myFunction()">Men Fashion</span>
           </a>
           <a href="#"> <span class="cat_name3">Phones</span><br /> </a>
           <a href="#">
@@ -66,7 +66,10 @@
           </a>
           <ul class="right_sliding">
             <li>
-              <a href="#">Women1</a>
+              <a href="#" id="demo">Women1</a>
+            </li>
+            <li>
+              <a href="#" id="demo2">Women1</a>
             </li>
             <li>
               <a href="#">Women1</a>
@@ -76,30 +79,6 @@
             </li>
             <li>
               <a href="#">Women1</a>
-            </li>
-            <li>
-              <a href="#">Women1</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="category_menu2 row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
-        <li>
-          <ul class="right_sliding2">
-            <li>
-              <a href="#">laki1</a>
-            </li>
-            <li>
-              <a href="#">laki1</a>
-            </li>
-            <li>
-              <a href="#">laki1</a>
-            </li>
-            <li>
-              <a href="#">laki1</a>
-            </li>
-            <li>
-              <a href="#">laki1</a>
             </li>
           </ul>
         </li>
@@ -775,6 +754,16 @@
         } else {
           x.type = 'password';
         }
+      }
+    </script>
+    <script>
+      function myFunction() {
+        document.getElementById('demo').innerHTML = 'Women1';
+      }
+    </script>
+    <script>
+      function myFunction() {
+        document.getElementById('demo2').innerHTML = 'Women1';
       }
     </script>
   </body>

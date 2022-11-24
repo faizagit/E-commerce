@@ -545,7 +545,8 @@ input::-webkit-inner-spin-button {
 .category_menu > li:hover > ul {
   display: block;
 }
-.category_menu2 > li:hover > ul {
+
+.category_menu2 > li > ul {
   display: block;
 }
 .showpassword {
