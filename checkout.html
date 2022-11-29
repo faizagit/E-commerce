@@ -34,13 +34,65 @@
             <p class="ps-3" style="font-size: 14px">Belum ada alamat yang terdaftar</p>
             <div class="btn-alamat">
               <button type="button" class="btn btn-outline-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-plus-lg"></i> Buat Alamat Pengiriman</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-truck pe-2"></i>Opsi Pembayaran</button>
             </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Opsi Pengiriman</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 200px"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-check" style="padding-bottom: 20px; margin-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault1"> Instan (Rp47.000) </label>
+                      <p class="text-muted estimasi">Estimasi tiba hari ini</p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault2"> Same Day (Rp23.000) </label>
+                      <p class="text-muted estimasi">Estimasi tiba hari ini - besok</p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault3"> Next Day (Rp10.000 - Rp15.000)</label>
+                      <p class="text-muted estimasi">Estimasi tiba besok - 1 Dec</p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault4"> Reguler (Rp5.000 - Rp8.000)</label>
+                      <p class="text-muted estimasi">Estimasi tiba 1 - 3 Dec</p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault5"> Reguler (Rp7.000)</label>
+                      <p class="text-muted estimasi">Estimasi tiba 1 - 4 Dec</p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #c1c1c1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault6"> Kargo (Rp25.000 - Rp30.000)</label>
+                      <p class="text-muted estimasi">
+                        Estimasi tiba 2 - 5 Dec <br />
+                        Rekomedais berat di atas 5kg
+                      </p>
+                    </div>
+                    <div class="form-check" style="padding-bottom: 20px; padding-top: 20px">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" />
+                      <label class="form-pengiriman form-check-label" for="flexRadioDefault7"> Ekonomi (Rp5.000 - Rp5.500)</label>
+                      <p class="text-muted estimasi">Estimasi tiba 2 - 5 Dec</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Tambah Alamat Pengiriman</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" style="margin-left: 200px" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <form>
