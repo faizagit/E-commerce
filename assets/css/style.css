@@ -492,7 +492,6 @@ input::-webkit-inner-spin-button {
   list-style-type: none;
   margin: 0;
   padding-left: 50px;
-  width: 200px;
 }
 .category_menu2 {
   list-style-type: none;
@@ -515,10 +514,8 @@ input::-webkit-inner-spin-button {
 .right_sliding {
   display: none;
   list-style-type: none;
-}
-.right_sliding2 {
-  display: none;
-  list-style-type: none;
+  position: absolute;
+  top: 100px;
 }
 .category_menu li a {
   color: #000;

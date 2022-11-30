@@ -49,52 +49,27 @@
       <div class="col-md-1" style="padding-top: 15px">
         <a href="keranjang.html"><i class="keranjang bi bi-cart2"></i></a>
       </div>
-      <ul class="category_menu row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
-        <li>
-          <a href="#">
-            <span class="cat_name">Womens Fashion</span>
-          </a>
-          <a href="#">
-            <span class="cat_name2">Men Fashion</span>
-          </a>
-          <a href="#">
-            <span class="cat_name3">Phones</span>
-          </a>
-          <br />
-          <a href="#">
-            <span class="cat_name4">Home Appliences</span>
-          </a>
-          <a href="#">
-            <span class="cat_name5">Computing</span>
-          </a>
-          <ul class="right_sliding">
-            <li>
-              <a href="#" id="demo">Women1</a>
-            </li>
-            <li>
-              <a href="#" id="demo2">Women1</a>
-            </li>
-            <li>
-              <a href="#">Women1</a>
-            </li>
-            <li>
-              <a href="#">Women1</a>
-            </li>
-            <li>
-              <a href="#">Women1</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <!-- <div class="category row row-cols-1 row-cols-md-4 g-3 collapse" id="collapseExample">
-        <div class="col left-category">
-          <p>Buku</p>
-          <p>E-Book</p>
-          <p>Alat Tulis</p>
-          <p>Mainan</p>
-        </div>
-        <div class="col right-category">jfdwjnedownmed</div>
-      </div> -->
+      <span class="category_menu row collapse" id="collapseExample">
+        <a href="#" class="d-flex" style="text-decoration: none">
+          <span class="btn" data-target="kotak" style="padding-right: 200px">Buku</span>
+          <div class="kotak col-md-6" id="kotak2" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
+            <p>ajoasj</p>
+            <p>ajoasj</p>
+            <p>ajoasj</p>
+            <p>ajoasj</p>
+          </div>
+        </a>
+        <a href="#" class="d-flex" style="text-decoration: none; padding-bottom: 200px">
+          <span class="btn" data-target="kotak2" style="padding-right: 200px">Ebook</span>
+          <div class="kotak col-md-6" id="kotak" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
+            <p>aosjeoje</p>
+            <p>aosjeoje</p>
+            <p>aosjeoje</p>
+            <p>aosjeoje</p>
+            <p>aosjeoje</p>
+          </div>
+        </a>
+      </span>
     </nav>
     <!-- tutup navbar -->
 
@@ -791,6 +766,14 @@
       });
       $('#btn-close-wa-box').on('click', function () {
         $('.wabox').fadeToggle('fast');
+      });
+
+      $(document).ready(function () {
+        $('.btn').mouseenter(function () {
+          $('.kotak').css('display', 'block');
+          var target = $(this).data('target');
+          $(`#${target}`).css('display', 'none');
+        });
       });
     </script>
   </body>
