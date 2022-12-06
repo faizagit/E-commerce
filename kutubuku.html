@@ -59,8 +59,8 @@
             <p>ajoasj</p>
           </div>
         </a>
-        <a href="#" class="d-flex" style="text-decoration: none; padding-bottom: 200px">
-          <span class="btn" data-target="kotak2" style="padding-right: 200px">Ebook</span>
+        <a href="#" class="d-flex" style="text-decoration: none">
+          <span class="btn" data-target="kotak2" style="padding-right: 200px; padding-bottom: 200px">Ebook</span>
           <div class="kotak col-md-6" id="kotak" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
             <p>aosjeoje</p>
             <p>aosjeoje</p>
@@ -771,6 +771,13 @@
       $(document).ready(function () {
         $('.btn').mouseenter(function () {
           $('.kotak').css('display', 'block');
+          var target = $(this).data('target');
+          $(`#${target}`).css('display', 'none');
+        });
+      });
+      $(document).ready(function () {
+        $('.btn3').mouseenter(function () {
+          $('.kotak3').css('display', 'block');
           var target = $(this).data('target');
           $(`#${target}`).css('display', 'none');
         });
