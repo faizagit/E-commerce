@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <!-- <div class="container">
+    <div class="container">
       <h4 class="text-keranjang">Keranjang</h4>
     </div>
     <div class="d-flex">
@@ -100,42 +100,46 @@
           <div class="card-body">
             <a style="font-family: 'Nunito', sans-serif; font-weight: 600; color: #5a5a5a">Pesanan 1</a>
           </div>
-          <div class="img-pesanan d-flex" style="padding-bottom: 10px; border-bottom: 1px solid #c1c1c1">
+          <div class="img-pesanan d-flex" style="justify-content: space-evenly; padding-bottom: 10px; border-bottom: 1px solid #c1c1c1">
             <img src="assets/image/book1.jpg" alt="" style="width: 85px; height: 130px; padding-left: 20px; padding-bottom: 30px" />
             <div class="text">
-              <p class="title-pesanan ms-1">Love From A to Z</p>
+              <p class="title-pesanan ms-1 me-2">Love From A to Z</p>
               <b class="price ms-1">Rp 93.000</b>
             </div>
-            <div class="minus" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
-              <button id="minus" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+            <div class="quantity d-flex">
+              <div class="minus" style="font-size: 20px; padding-top: 20px">
+                <button id="minus" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+              </div>
+              <div class="input" style="padding-top: 20px">
+                <input id="input" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
+              </div>
+              <div class="plus" style="font-size: 20px; padding-top: 20px">
+                <button id="plus" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
+              </div>
             </div>
-            <div class="input" style="padding-top: 20px">
-              <input id="input" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
-            </div>
-            <div class="plus" style="font-size: 20px; padding-top: 20px">
-              <button id="plus" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
-            </div>
-            <div class="price-total" style="padding-top: 13px; padding-left: 90px">
+            <div class="price-total" style="padding-top: 13px; padding-left: 30px; margin-right: 10px">
               <p style="font-size: 14px; color: #0060ae"><b>Rp 93.000</b></p>
               <a style="font-size: 14px"><i class="bi bi-trash3 ms-1"></i>Hapus</a>
             </div>
           </div>
-          <div class="img-pesanan d-flex" style="padding-top: 40px">
+          <div class="img-pesanan d-flex" style="justify-content: space-evenly; padding-top: 40px">
             <img src="assets/image/book1.jpg" alt="" style="width: 85px; height: 130px; padding-left: 20px; padding-bottom: 30px" />
             <div class="text">
-              <p class="title-pesanan ms-1">Love From A to Z</p>
+              <p class="title-pesanan ms-1 me-2">Love From A to Z</p>
               <b class="price ms-1">Rp 93.000</b>
             </div>
-            <div class="minus2" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
-              <button id="minus2" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+            <div class="quantity d-flex">
+              <div class="minus2" style="font-size: 20px; padding-left: 60px; padding-top: 20px">
+                <button id="minus2" style="border-bottom: 1px solid; padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-dash-circle"></i></button>
+              </div>
+              <div class="input2" style="padding-top: 20px">
+                <input id="input2" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
+              </div>
+              <div class="plus2" style="font-size: 20px; padding-top: 20px">
+                <button id="plus2" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
+              </div>
             </div>
-            <div class="input2" style="padding-top: 20px">
-              <input id="input2" type="number" style="padding-top: 3px; padding: left 8px; padding-bottom: 10px; background-color: transparent; border: none; width: 40px" />
-            </div>
-            <div class="plus2" style="font-size: 20px; padding-top: 20px">
-              <button id="plus2" style="padding-bottom: 10px; border: none; background-color: transparent; color: #0060ae"><i class="bi bi-plus-circle"></i></button>
-            </div>
-            <div class="price-total" style="padding-top: 13px; padding-left: 90px">
+            <div class="price-total" style="padding-top: 13px; padding-left: 30px; margin-right: 10px">
               <p style="font-size: 14px; color: #0060ae"><b>Rp 93.000</b></p>
               <a style="font-size: 14px"><i class="bi bi-trash3 ms-1"></i>Hapus</a>
             </div>
@@ -158,10 +162,10 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Keranjang belum diisi -->
-    <div class="keranjang-kosong container" style="margin-top: 100px; padding-top: 50px; padding-bottom: 100px">
+    <!-- <div class="keranjang-kosong container" style="margin-top: 100px; padding-top: 50px; padding-bottom: 100px">
       <div class="empty-cart" style="display: flex; justify-content: center">
         <img src="assets/image/empty-cart.png" alt="empty cart" />
         <div class="isi-empty-cart" style="padding-left: 20px">
@@ -172,7 +176,7 @@
             <p class="text-muted" style="font-family: 'Nunito', sans-serif">
               Tas belanja kamu masih kosong lho! <br />
               Mulai belanja sekarang dan dapatkan barang yang <br />
-              kamu inginkan hanya di Gramedia.
+              kamu inginkan hanya di KutuBuku.
             </p>
           </div>
           <div class="mulai-belanja" style="font-family: 'Nunito',sans-serif;">
@@ -180,7 +184,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- tutup Keranjang belum diisi -->
 
     <!-- footer -->

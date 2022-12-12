@@ -30,12 +30,75 @@
       <div class="d-flex">
         <div class="card shadow-sm" style="width: 725px">
           <div class="card-body">
-            <p class="text-alamat text-muted p-3"><i class="bi bi-geo-alt-fill me-1"></i>Alamat Tujuan Pengiriman</p>
-            <p class="ps-3" style="font-size: 14px">Belum ada alamat yang terdaftar</p>
+            <div class="d-flex" style="justify-content: space-between">
+              <b class="text-alamat text-muted p-3"><i class="bi bi-geo-alt-fill me-1"></i>Alamat Tujuan Pengiriman</b>
+              <a type="button" class="text-alamat p-3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none">Ubah Alamat</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="d-flex p-3">
+                    <a href="#"><i class="bi bi-plus-lg" style="font-size: 25px; font-weight: 600; text-decoration: none; color: #000000"></i></a>
+                    <h5 class="modal-title" id="exampleModalLabel" style="padding-left: 130px">Alamat Pengiriman</h5>
+                    <button type="button" style="position: absolute; left: 450px" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card shadow p-3 mb-2 bg-body rounded" style="width: auto">
+                      <div class="card-alamat">
+                        <div class="ubah-lagi d-flex" style="justify-content: space-between">
+                          <b class="ps-3" style="font-size: 15px">Rumah</b>
+                          <a class="text-alamat" style="text-decoration: none">Ubah </a>
+                        </div>
+                        <div class="ps-3 name-calling d-flex" style="font-size: 14px; font-family: 'Nunito', sans-serif; padding-top: 10px">
+                          <p class="pe-2" style="border-right: 1px solid #000000">Faiz</p>
+                          <p class="ps-2">+62203290330293</p>
+                        </div>
+                        <div class="placement ps-3" style="font-size: 14px; font-family: 'Nunito', sans-serif">
+                          <p>alamat lengkap, kecamatan, kabupaten, provinsi</p>
+                        </div>
+                        <div class="ps-3">
+                          <button type="button" class="btn btn-outline-primary rounded-pill" style="width: 100%">Alamat Terpilih</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: auto">
+                      <div class="card-alamat">
+                        <div class="ubah-lagi d-flex" style="justify-content: space-between">
+                          <b class="ps-3" style="font-size: 15px">Rumah</b>
+                          <a class="text-alamat" style="text-decoration: none">Ubah </a>
+                        </div>
+                        <div class="ps-3 name-calling d-flex" style="font-size: 14px; font-family: 'Nunito', sans-serif; padding-top: 10px">
+                          <p class="pe-2" style="border-right: 1px solid #000000">Faiz</p>
+                          <p class="ps-2">+62203290330293</p>
+                        </div>
+                        <div class="placement ps-3" style="font-size: 14px; font-family: 'Nunito', sans-serif">
+                          <p>alamat lengkap, kecamatan, kabupaten, provinsi</p>
+                        </div>
+                        <div class="ps-3">
+                          <button type="button" class="btn btn-outline-primary rounded-pill" style="width: 100%">Alamat Terpilih</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <b class="ps-3" style="font-size: 15px">Rumah</b>
+            <div class="ps-3 name-calling d-flex" style="font-size: 14px; font-family: 'Nunito', sans-serif; padding-top: 10px">
+              <p class="pe-2" style="border-right: 1px solid #000000">Faiz</p>
+              <p class="ps-2">+62203290330293</p>
+            </div>
+            <div class="placement ps-3" style="font-size: 14px; font-family: 'Nunito', sans-serif">
+              <p>alamat lengkap, kecamatan, kabupaten, provinsi</p>
+            </div>
+            <!-- <p class="ps-3" style="font-size: 14px">Belum ada alamat yang terdaftar</p>
             <div class="btn-alamat">
               <button type="button" class="btn btn-outline-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-plus-lg"></i> Buat Alamat Pengiriman</button>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-truck pe-2"></i>Opsi Pembayaran</button>
-            </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-truck pe-2"></i>Opsi Pengiriman</button>
+            </div> -->
+            <!-- modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -182,8 +245,8 @@
                       </div>
                     </form>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary w-100">Simpan Alamat</button>
+                  <div class="p-3">
+                    <a href="checkout.html"><button type="button" class="btn btn-primary w-100">Simpan Alamat</button></a>
                   </div>
                 </div>
               </div>
