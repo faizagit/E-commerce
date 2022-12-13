@@ -96,7 +96,6 @@
             <p class="ps-3" style="font-size: 14px">Belum ada alamat yang terdaftar</p>
             <div class="btn-alamat">
               <button type="button" class="btn btn-outline-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-plus-lg"></i> Buat Alamat Pengiriman</button>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-truck pe-2"></i>Opsi Pengiriman</button>
             </div>
             <!-- modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -253,9 +252,12 @@
         <div class="metode-pembayaran ms-3">
           <div class="card shadow-sm" style="width: 500px; height: 225px">
             <div class="card-body">
-              <p class="text-metode p-3">Metode Pembayaran</p>
-              <div class="btn-metode ps-3">
-                <button type="button" class="btn btn-outline-primary w-100">Pilih Metode Pembayaran</button>
+              <p class="text-metode p-3">Metode Pembayaran & Opsi Pembayaran</p>
+              <div class="btn-metode ps-3 pe-3 pb-2">
+                <button type="button" class="btn btn-outline-primary w-100 rounded-pill">Pilih Metode Pembayaran</button>
+              </div>
+              <div class="opsi-pengiriman ps-3 pe-3">
+                <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-truck pe-2"></i>Opsi Pengiriman</button>
               </div>
             </div>
           </div>
