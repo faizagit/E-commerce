@@ -51,42 +51,39 @@
       </div>
       <span class="category_menu row collapse" id="collapseExample">
         <a href="#" class="d-flex" style="text-decoration: none">
-          <span class="btn" data-target="kotak" style="padding-right: 200px">Buku</span>
-          <div class="kotak col-md-6" id="kotak2" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
-            <a>ajoasj</a>
-            <a>ajoasj</a>
-            <a>ajoasj</a>
-            <a>ajoasj</a>
+          <span class="btn" data-target="kotak2" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Buku</span>
+          <div class="kotak col-md-6" id="kotak2" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
           </div>
         </a>
         <a href="#" class="d-flex" style="text-decoration: none">
-          <span class="btn" data-target="kotak2" style="padding-right: 200px">Ebook</span>
-          <div class="kotak col-md-6" id="kotak" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
-            <a>aosjeoje</a>
-            <a>aosjeoje</a>
-            <a>aosjeoje</a>
-            <a>aosjeoje</a>
-            <a>aosjeoje</a>
+          <span class="btn" data-target="kotak3" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Ebook</span>
+          <div class="kotak col-md-6" id="kotak3" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
           </div>
         </a>
         <a href="#" class="d-flex" style="text-decoration: none">
-          <span class="btn" data-target="kotak" style="padding-right: 200px">Alat Tulis</span>
-          <div class="kotak col-md-6" id="kotak3" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
-            <!-- <a>bjsaosjw</a>
-            <a>bjsaosjw</a>
-            <a>bjsaosjw</a>
-            <a>bjsaosjw</a>
-            <a>bjsaosjw</a> -->
+          <span class="btn" data-target="kotak4" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Alat Tulis</span>
+          <div class="kotak col-md-6" id="kotak4" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
           </div>
         </a>
         <a href="#" class="d-flex" style="text-decoration: none">
-          <span class="btn" data-target="kotak2" style="padding-right: 200px; padding-bottom: 200px">Mainan</span>
-          <div class="kotak col-md-6" id="kotak" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px">
-            <!-- <a>cakmaowjqas</a>
-            <a>cakmaowjqas</a>
-            <a>cakmaowjqas</a>
-            <a>cakmaowjqas</a>
-            <a>cakmaowjqas</a> -->
+          <span class="btn" data-target="kotak5" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px; padding-bottom: 100px">Mainan</span>
+          <div class="kotak col-md-6" id="kotak5" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
           </div>
         </a>
       </span>
@@ -790,14 +787,14 @@
 
       $(document).ready(function () {
         $('.btn').mouseenter(function () {
-          $('.kotak').css('display', 'block');
+          $('.kotak').css('display', 'none');
           var target = $(this).data('target');
-          $(`#${target}`).css('display', 'none');
+          $(`#${target}`).css('display', 'block');
         });
       });
       // $(document).ready(function () {
       //   $('.btn').mouseenter(function () {
-      //     $('.kotak3').css('display', 'block');
+      //     $('.kotak').css('display', 'block');
       //     var target = $(this).data('target');
       //     $(`#${target}`).css('display', 'none');
       //   });
