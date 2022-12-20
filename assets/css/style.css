@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+@media (max-width: 500px) {
+  .without-carousel {
+    display: none;
+  }
+  .carousel-control-next {
+    margin-top: 30px;
+  }
+  .carousel-control-prev {
+    margin-top: 30px;
+  }
+  .img-carousel {
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  .carousel {
+    margin-top: 10px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 20%;
+  }
+  .carousel-inner {
+    padding-top: 90px;
+    margin-bottom: 50px;
+    height: 200px;
+  }
+}
+
 .merk {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
@@ -96,7 +123,7 @@
   padding-top: 90px;
   margin-left: 50px;
   margin-bottom: 40px;
-  width: 95%;
+  width: 1250px;
 }
 .img1 {
   width: 400px;
@@ -159,6 +186,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+  margin-top: 40px;
 }
 .text-icon {
   font-family: Nunito, serif;
@@ -367,6 +395,33 @@ input[type='submit'] {
 }
 .cart {
   width: 600px;
+}
+.count-cart {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-top: 1px;
+  font-size: 14px;
+
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 10px;
+  right: 65px;
+}
+.count-cart2 {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding-left: 5px;
+  padding-top: 1px;
+  font-size: 14px;
+
+  height: 19px;
+  width: 26px;
+  position: absolute;
+  top: 10px;
+  right: 60px;
 }
 .pesanan {
   padding-left: 115px;
@@ -614,4 +669,40 @@ input::-webkit-inner-spin-button {
   font-size: 13px;
 
   padding-left: 5px;
+}
+.text-riwayat-pembelian {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.status-pembayaran {
+  margin-left: 10px;
+  background-color: yellow;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  height: 30px;
+  width: 155px;
+}
+.text-pembelian {
+  font-family: 'Nunito', sans-serif;
+}
+.counting-days {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+
+  background-color: #ccdfef;
+}
+.info-pemesanan {
+  font-family: 'Nunito', sans-serif;
+}
+.rincian-barang {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.status-pemesanan {
+  background-color: yellow;
+  font-size: 13px;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
 }
