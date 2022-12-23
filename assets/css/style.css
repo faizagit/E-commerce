@@ -79,8 +79,10 @@
     text-align: center;
   }
   .quantity {
-    justify-content: center;
     border: none !important;
+  }
+  .minus {
+    padding-left: 0px !important;
   }
   .card-subtitle {
     text-align: center;
@@ -110,6 +112,104 @@
   }
   .daftar-format {
     justify-content: center !important;
+  }
+  .delete-keranjang {
+    padding: 0px !important;
+  }
+  .pesanan {
+    padding: 0px !important;
+    flex-direction: column;
+  }
+  .detail-pesanan {
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+  }
+  .detail-pesanan2 {
+    width: 200px !important;
+  }
+  .card-link {
+    padding: 0px !important;
+  }
+  .cart {
+    width: 375px !important;
+  }
+  .img-pesanan {
+    flex-direction: column;
+  }
+  .price-total {
+    padding-left: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .minus2 {
+    padding-left: 0px !important;
+  }
+  .pesanan-checkout {
+    flex-direction: column;
+  }
+  .tujuan {
+    flex-direction: column;
+  }
+  .metode-pembayaran {
+    margin: 0px !important;
+  }
+  .alamat {
+    padding-left: 0px !important;
+  }
+  .tujuan1 {
+    width: 375px !important;
+  }
+  .quantity3 {
+    justify-content: center;
+  }
+  .filter2 {
+    display: none !important;
+  }
+  .card-bukupilihan {
+    width: 370px !important;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 0px !important;
+  }
+  .buku-pilihan {
+    padding-left: 0px !important;
+  }
+  .filter-btn {
+    display: block !important;
+  }
+  .order-history {
+    flex-direction: column;
+  }
+  .counting-days {
+    width: 350px;
+  }
+  .card-rincian-barang {
+    width: 350px;
+  }
+  .card-info-pemesanan {
+    margin-left: 0px !important;
+
+    width: 350px !important;
+  }
+  .card-rincian-pembayaran {
+    margin-left: 0px !important;
+
+    width: 350px !important;
+  }
+  .card-rincian-pengiriman {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    width: 350px !important;
+  }
+  .text-info-pemesanan {
+    margin-top: 20px !important;
+    padding-left: 0px !important;
+  }
+  .status-pembayaran {
+    height: 50px !important;
+  }
+  .mySlider {
+    width: 380px;
   }
 }
 
@@ -191,8 +291,38 @@
   .rekom {
     width: 150px;
   }
+  .delete-keranjang {
+    padding: 0px !important;
+  }
+  .pesanan {
+    padding: 0px !important;
+    flex-direction: column;
+  }
+  .detail-pesanan {
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+  }
+  .detail-pesanan2 {
+    width: auto !important;
+  }
+  .card-link {
+    padding: 0px !important;
+  }
+  .cart {
+    width: 375px !important;
+  }
+  .img-pesanan {
+    flex-direction: column;
+  }
+  .price-total {
+    padding-left: 20px !important;
+    padding-bottom: 20px !important;
+  }
 }
 @media (max-width: 960px) {
+  .img-pesanan {
+    flex-direction: column;
+  }
   .pembayaran {
     background-color: #ffffff;
     position: fixed;
@@ -313,6 +443,9 @@
     position: absolute;
     top: 35px;
   } */
+  .pesanan {
+    flex-direction: column;
+  }
 }
 @media (max-width: 1115px) {
   .img-banner1 {
@@ -344,7 +477,6 @@
   color: #2470ad;
   font-size: 18px;
 }
-
 .icon-buku {
   margin-left: 20px;
   font-size: 30px;
@@ -730,7 +862,7 @@ input[type='submit'] {
   right: 60px;
 }
 .pesanan {
-  padding-left: 115px;
+  padding-left: 110px;
 }
 .title-pesanan {
   padding-left: 10px;
