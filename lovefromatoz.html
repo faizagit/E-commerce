@@ -21,38 +21,76 @@
   <body>
     <img class="wa-icon fixed-bottom" src="assets/image/icon-wa-removebg-preview (1).png" alt="" />
     <!-- navbar -->
-    <nav class="row navbar-light shadow mb-5 bg-body rounded fixed-top">
-      <div class="col-md-3" style="padding-top: 15px; padding-bottom: 15px">
+    <nav class="row navbar-light navbar-expand-lg shadow mb-5 bg-body rounded fixed-top d-flex">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="brand col-md-3" style="padding-top: 15px; padding-bottom: 15px">
         <a class="merk navbar-brand" href="kutubuku.html">
-          <i class="icon-buku bi bi-book d-inline-block align-text-top ms-5">KUTU BUKU</i>
+          <i class="icon-buku bi bi-book d-inline-block align-text-top">KUTU BUKU</i>
         </a>
       </div>
-      <div class="col-md-2" style="padding-top: 15px">
-        <!-- <button class="btn-kategori dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Kategori</button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <div class="category col-md-2" style="padding-top: 15px">
+        <button class="btn-kategori" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">Kategori <i class="bi bi-chevron-down"></i></button>
+      </div>
+      <div class="autocomplete col-md-5" style="padding-top: 15px">
+        <form autocomplete="off" class="form-search"><input id="myInput" class="searching form-control me-2" type="search" placeholder="Cari Produk, Judul Buku, Penulis" aria-label="Search" /></form>
+      </div>
+      <!-- <div class="col-md-1" style="padding-top: 25px">
+        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" style="color: #155183">Masuk</a>
+      </div> -->
+      <div class="icon-account dropdown col-md-1 collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="dropdown" id="dropdownMenuButton1" data-bs-toggle="dropdown"> <i class="akun bi bi-person-circle"></i> </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1" style="border-radius: 10px">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul> -->
-        <button class="btn-kategori" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Kategori <i class="bi bi-chevron-down"></i></button>
-        <div class="collapse" id="collapseExample">
-          <div class="container">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius, exercitationem cumque dignissimos explicabo iusto saepe provident iure quam porro placeat veniam deserunt nostrum ea expedita, corrupti, molestias
-            necessitatibus nesciunt?
+          <div class="dropdown-divider"></div>
+          <li><a class="dropdown-item text-danger" href="#">Keluar</a></li>
+        </ul>
+      </div>
+      <div class="col-md-1" style="padding-top: 15px">
+        <a href="keranjang.html"><i class="keranjangg bi bi-cart2"></i></a>
+        <span class="count-cart">1</span>
+        <span class="rounded-pill count-cart2">99</span>
+      </div>
+      <span class="category_menu row collapse" id="collapseExample3">
+        <a href="#" class="d-flex" style="text-decoration: none; margin-right: 20px">
+          <span class="btn" data-target="kotak2" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Buku</span>
+          <div class="kotak col-md-6" id="kotak2" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Buku</p></a>
           </div>
-        </div>
-      </div>
-      <div class="col-md-5" style="padding-top: 15px">
-        <form class="form-search">
-          <input class="searching form-control me-2" type="search" placeholder="Cari Produk, Judul Buku, Penulis" aria-label="Search" />
-        </form>
-      </div>
-      <div class="col-md-1" style="padding-top: 15px">
-        <i class="akun bi bi-person-circle"></i>
-      </div>
-      <div class="col-md-1" style="padding-top: 15px">
-        <i class="keranjangg bi bi-cart2"></i>
-      </div>
+        </a>
+        <a href="#" class="d-flex" style="text-decoration: none">
+          <span class="btn" data-target="kotak3" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Ebook</span>
+          <div class="kotak col-md-6" id="kotak3" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Ebook</p></a>
+          </div>
+        </a>
+        <a href="#" class="d-flex" style="text-decoration: none">
+          <span class="btn" data-target="kotak4" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px">Alat Tulis</span>
+          <div class="kotak col-md-6" id="kotak4" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Alat Tulis</p></a>
+          </div>
+        </a>
+        <a href="#" class="d-flex" style="text-decoration: none">
+          <span class="btn" data-target="kotak5" style="padding-right: 200px; font-family: 'Nunito', sans-serif; font-size: 15px; padding-bottom: 100px">Mainan</span>
+          <div class="kotak col-md-6" id="kotak5" style="display: none; color: #000000; position: absolute; left: 400px; top: 80px; font-family: 'Nunito', sans-serif; font-size: 15px">
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+            <a href="#" class="text-decoration-none text-dark"><p>Mainan</p></a>
+          </div>
+        </a>
+      </span>
     </nav>
     <!-- tutup navbar -->
 
@@ -189,7 +227,7 @@
         <i class="icon-buku bi bi-book d-inline-block align-text-top ms-5"><b>KUTU BUKU</b></i>
       </div>
       <div class="text-footer-sosmed">
-        <h5 style="margin-top: 8px; color: #6e6e6e">Toko buku online terbesar, terlengkap dan terpercaya di Indonesia</h5>
+        <h5 class="text-center h5" style="margin-top: 8px; color: #6e6e6e">Toko buku online terbesar, terlengkap dan terpercaya di Indonesia</h5>
       </div>
       <div class="icon-sosmed">
         <img src="assets/image/icon-sosmed.png" class="icon-sosmed" alt="" style="width: 30px; height: 30px" />
