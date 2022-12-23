@@ -63,7 +63,7 @@
           <li><a class="dropdown-item text-danger" href="#">Keluar</a></li>
         </ul>
       </div>
-      <div class="col-md-1" style="padding-top: 15px">
+      <div class="col-md-1" style="padding-top: 20px">
         <a href="keranjang.html"><i class="keranjangg bi bi-cart2"></i></a>
         <span class="count-cart">1</span>
         <span class="rounded-pill count-cart2">99</span>
@@ -175,9 +175,9 @@
         </div>
       </div>
       <div class="product">
-        <div class="d-flex" style="justify-content: flex-end; margin-bottom: 20px; ">
+        <div class="d-flex dua-filter" style="justify-content: flex-end; margin-bottom: 20px; ">
           <div class="form-out filter-btn" style="padding-bottom: 25px; padding-right: 25px; display: none; ">
-            <button type="button" class="btn btn-primary">pppp</button>
+            <a class="btn btn-outline-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" style="width: 150px">Filter</a>
           </div>
           <div class="form-out" style="padding-bottom: 25px">
             <select class="form select2 p-2" aria-label="Default select example">
@@ -303,6 +303,84 @@
     </div>
   </div>
     <!-- tutup buku pilihan -->
+    <!-- modal -->
+     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="title-bukupilihan text-center">
+                <p style="font-weight: 700">Buku Pilihan</p>
+                <p style="font-size: 15px; color: #6e6e6e">Periode</p>
+                <p style="font-size: 17px; padding-bottom: 20px; border-bottom: #dad6d6 1px solid">25 Mei 2021 - 31 Desember 2022</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="filter">
+                <p style="font-family: 'Nunito', sans-serif; font-size: 25px; font-weight: 700">Filter</p>
+                <p style="font-size: 20px; font-weight: 600">Kategori</p>
+                <div class="kategori">
+                  <p>
+                    <a class="btn btn-buku " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"> Buku </a>
+                  </p>
+                  <div class="collapse" id="collapseExample1">
+                    <div class="card-body">Non-fiksi</div>
+                    <div class="card-body">Kamus</div>
+                    <div class="card-body">Pendidikan</div>
+                    <div class="card-body">Bisnis & Ekonomi</div>
+                  </div>
+                  <p>
+                    <a class="btn btn-buku2 text-start" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"> Referensi Sekolah </a>
+                  </p>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card-body">Non-fiksi</div>
+                    <div class="card-body">Kamus</div>
+                    <div class="card-body">Pendidikan</div>
+                    <div class="card-body">Bisnis & Ekonomi</div>
+                  </div>
+                  <p>
+                    <a class="btn btn-buku3 text-start" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"> Kesehatan & Kecantikan </a>
+                  </p>
+                  <div class="collapse" id="collapseExample3">
+                    <div class="card-body">Non-fiksi</div>
+                    <div class="card-body">Kamus</div>
+                    <div class="card-body">Pendidikan</div>
+                    <div class="card-body">Bisnis & Ekonomi</div>
+                  </div>
+                </div>
+                <div class="harga">
+                  <p style="font-size: 20px; font-weight: 600">Harga</p>
+                  <form>
+                    <label style="font-size: 13px; margin-bottom: 5px" for="fname">Minimum:</label><br />
+                    <input style="margin-bottom: 10px; height: 45px; width: 250px; font-size: 15px" type="text" id="fname" name="fname" placeholder="Rp 0" /><br />
+                    <label style="font-size: 13px; margin-bottom: 5px" for="lname">Maksimum:</label><br />
+                    <input style="height: 45px; width: 250px; font-size: 15px" type="text" id="lname" name="lname" placeholder="Rp 200.000" />
+                  </form>
+                </div>
+                <div class="stok">
+                  <p style="font-size: 20px; font-weight: 600; margin-top: 20px">Filter berdasarkan stok</p>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label class="form-check-label pt-2" for="flexRadioDefault1"> Semua </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label class="form-check-label pt-2" for="flexRadioDefault1"> Tersedia </label>
+                  </div>
+                </div>
+                <div class="reset mb-5">
+                  <a href="bukupilihan.html"><button style="width: 100px" type="button" class="btn btn-outline-primary">Reset</button></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div>
+    <!-- tutup modal -->
 
     <!-- footer -->
     <div class="footer-top">

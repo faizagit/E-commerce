@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 @media (max-width: 375px) {
+  .category {
+    padding-top: 20px !important;
+  }
   .img-banner1 {
     display: none;
   }
@@ -117,7 +120,7 @@
     padding: 0px !important;
   }
   .pesanan {
-    padding: 0px !important;
+    margin-left: 12px !important;
     flex-direction: column;
   }
   .detail-pesanan {
@@ -131,7 +134,11 @@
     padding: 0px !important;
   }
   .cart {
-    width: 375px !important;
+    width: 350px !important;
+  }
+  .cart2 {
+    width: 350px !important;
+    margin-left: 12px !important;
   }
   .img-pesanan {
     flex-direction: column;
@@ -156,14 +163,13 @@
     padding-left: 0px !important;
   }
   .tujuan1 {
-    width: 375px !important;
+    width: 350px !important;
+    margin-left: 12px !important;
   }
   .quantity3 {
     justify-content: center;
   }
-  .filter2 {
-    display: none !important;
-  }
+
   .card-bukupilihan {
     width: 370px !important;
     display: flex;
@@ -176,6 +182,7 @@
   }
   .filter-btn {
     display: block !important;
+    width: 200px;
   }
   .order-history {
     flex-direction: column;
@@ -217,9 +224,23 @@
   .btn-close {
     margin-left: 50px !important;
   }
+  .banner1 {
+    display: none;
+  }
+  .banner2 {
+    display: none;
+  }
+  .hapus-bbrp {
+    margin-left: 12px !important;
+  }
+  .filter2 {
+    display: none;
+  }
 }
-
 @media (max-width: 500px) {
+  .filter2 {
+    display: none;
+  }
   .pembayaran {
     background-color: #ffffff;
     position: fixed;
@@ -303,13 +324,13 @@
     margin-bottom: 20px;
   }
   .detail-pesanan2 {
-    width: auto !important;
+    width: 350px !important;
   }
   .card-link {
     padding: 0px !important;
   }
   .cart {
-    width: 375px !important;
+    width: 350px !important;
   }
   .img-pesanan {
     flex-direction: column;
