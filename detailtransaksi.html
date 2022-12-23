@@ -67,7 +67,7 @@
           <div class="card counting-days text-center">
             <p style="font-size: 20px; padding-top: 20px">Sisa Waktu Pembayaran Anda</p>
             <p id="counting-days" class="text-primary" style="font-size: 30px"></p>
-            <p style="font-size: 13px">21 Desember 2022, 11:35 WIB</p>
+            <p style="font-size: 13px">22 Desember 2022, 11:35 WIB</p>
           </div>
           <div class="rincian-barang pt-3">
             <p>Rincian barang</p>
@@ -102,6 +102,73 @@
                 <i class="bi bi-files text-primary" onclick="copyToClipboard('#transaction_id')"></i>
                 <p class="pt-3 m-0">Tanggal Pemesanan</p>
                 <span style="font-size: 13px">20 Desember 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="rincian-pembayaran mt-3">
+            <b class="ps-5">Rincian Pembayaran</b>
+            <div class="card ms-5 mt-3" style="width: 500px">
+              <div class="card-body">
+                <div class="jumlah-harga pb-3 d-flex" style="justify-content: space-between">
+                  <div class="jumlah">
+                    <p class="m-0">Total biaya 1 barang</p>
+                    <p class="m-0">Total biaya pengiriman</p>
+                  </div>
+                  <div class="harga">
+                    <p class="m-0">Rp 95.000</p>
+                    <p class="m-0">Rp 95.000</p>
+                  </div>
+                </div>
+                <div class="total-biaya d-flex pt-3 pb-3" style="justify-content: space-between">
+                  <div class="total">
+                    <p class="m-0">Total Biaya Belanja</p>
+                  </div>
+                  <div class="biaya">
+                    <p class="m-0">Rp 130.000</p>
+                  </div>
+                </div>
+                <div class="account-pembayaran pt-4 pb-4">
+                  <b>Virtual Account BCA (Otomatis)</b>
+                </div>
+                <div class="nomor-virtual d-flex" style="justify-content: space-between">
+                  <div class="nomor">
+                    <p class="m-0" style="font-size: 12px">Nomor Virtual Account</p>
+                    <b style="font-size: 14px">39176574267</b>
+                  </div>
+                  <div class="virtual">
+                    <b class="text-primary" style="font-size: 14px">Salin</b>
+                  </div>
+                </div>
+                <div class="total-belanja d-flex pt-3 pb-3" style="justify-content: space-between">
+                  <div class="totall">
+                    <p class="m-0" style="font-size: 12px">Total Biaya Belanja</p>
+                    <b class="text-primary" style="font-size: 14px">Rp 130.000</b>
+                  </div>
+                  <div class="belanja">
+                    <b class="text-primary" style="font-size: 14px">Salin</b>
+                  </div>
+                </div>
+                <div class="btn btn-outline-primary rounded-pill" style="width: 100%; font-family: 'Nunito', sans-serif">Lihat Cara Pembayaran</div>
+              </div>
+            </div>
+          </div>
+          <div class="rincian-pengiriman mt-3">
+            <b class="ps-5">Rincian Pengiriman</b>
+            <div class="card ms-5 mt-3" style="width: 500px">
+              <div class="card-body">
+                <div class="metode-pengiriman pb-3">
+                  <p class="text-secondary mb-1">Metode Pengiriman</p>
+                  <p class="mb-1" style="font-weight: 600">AnterAja - Anteraja</p>
+                  <p class="m-0">Perkiraan sampai 22-12-2022 - 23-12-2022</p>
+                </div>
+                <div class="alamat-tujuan pt-3">
+                  <div class="icon-truck d-flex">
+                    <i class="bi bi-truck pe-2"></i>
+                    <p class="mb-2" style="font-weight: 600">Alamat Tujuan Pengiriman</p>
+                  </div>
+                  <p class="mb-2">Faiz | +628227814123</p>
+                  <p>qiwjqiwjqi, Karangpilang, Kota Surabaya, Jawa Timur - 60223</p>
+                </div>
               </div>
             </div>
           </div>
@@ -170,7 +237,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date('Dec 21, 2022 11:35:00').getTime();
+      var countDownDate = new Date('Dec 23, 2022 11:35').getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {

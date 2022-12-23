@@ -1,18 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-@media (max-width: 500px) {
-  .without-carousel {
+@media (max-width: 375px) {
+  .img-banner1 {
     display: none;
+  }
+  .carousel-banner {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .img-carousel {
+    max-height: 200px;
+  }
+  .karousel {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .carousel-indicators {
+    height: 70px;
+  }
+  .icon-kategori {
+    grid-template-columns: 100px 100px;
+    text-align: center;
+  }
+  .recommended {
+    padding: 10px !important;
+    max-width: 400px;
+  }
+  .popular {
+    padding: 10px !important;
+    max-width: 400px;
+  }
+  .popular-novel {
+    padding: 10px !important;
+    max-width: 400px;
+  }
+  .brand {
+    right: 50px;
+  }
+  .count-cart {
+    position: absolute;
+    left: 360px;
+  }
+  .count-cart2 {
+    position: absolute;
+    left: 355px;
+  }
+  .brand {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+  }
+  .icon-buku {
+    font-size: 12px;
+  }
+  .searching {
+    width: 375px !important;
+  }
+  .text-recommend {
+    padding: 0px !important;
+    font-size: 20px !important;
+  }
+  .text-popular {
+    padding: 0px !important;
+    font-size: 20px !important;
+  }
+  .text-popular-novel {
+    padding: 0px !important;
+    font-size: 20px;
+  }
+  .pembayaran {
+    background-color: #d1d1d1;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .subtotal {
+    text-align: center;
+  }
+  .quantity {
+    justify-content: center;
+    border: none !important;
+  }
+  .card-subtitle {
+    text-align: center;
+  }
+  .img-book1 {
+    width: 220px !important;
+    margin-left: 20px;
+  }
+  .judul {
+    padding: 0px !important;
+  }
+  .detail {
+    justify-content: space-around !important;
+  }
+  .desc {
+    padding: 0px 20px 0px 20px;
+  }
+  .isi-desc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .author-buku1 {
+    text-align: center;
+  }
+  .judul-buku1 {
+    text-align: center;
+  }
+  .daftar-format {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .pembayaran {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .img-banner1 {
+    display: none;
+  }
+  .text-recommend {
+    padding: 0px !important;
+  }
+  .text-popular-novel {
+    padding: 0px !important;
+  }
+  .carousel-banner {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .img-carousel {
+    max-height: 200px;
+  }
+  .karousel {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .carousel-indicators {
+    height: 70px;
+  }
+  .icon-kategori {
+    grid-template-columns: 100px 100px;
   }
   .carousel-control-next {
     margin-top: 30px;
   }
   .carousel-control-prev {
     margin-top: 30px;
-  }
-  .img-carousel {
-    margin-bottom: 30px;
-    width: 300px;
   }
   .carousel {
     margin-top: 10px;
@@ -21,17 +160,185 @@
     width: 20%;
   }
   .carousel-inner {
-    padding-top: 90px;
     margin-bottom: 50px;
-    height: 200px;
+  }
+
+  .carousel-item .img-carousel {
+    width: 100px;
+  }
+  .icon-kategori {
+    flex-direction: column;
+  }
+  .icon1 {
+    display: flex;
+    justify-content: center;
+  }
+  .icon2 {
+    display: flex;
+    justify-content: center;
+  }
+  .img-icon {
+    width: 110px;
+  }
+  .text-icon {
+    font-size: 12px;
+  }
+  .keranjangg {
+    position: absolute;
+    top: 15px;
+    left: 340px;
+  }
+  .rekom {
+    width: 150px;
   }
 }
+@media (max-width: 960px) {
+  .pembayaran {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .img-banner1 {
+    display: none;
+  }
+  .text-recommend {
+    padding: 0px !important;
+  }
+  .carousel-banner {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .without-carousel {
+    display: none;
+  }
+  .img-carousel {
+    width: 70%;
+    max-width: 100%;
+  }
+  .karousel {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .carousel {
+    margin-top: 10px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 20%;
+  }
+  .text-subscribe {
+    padding-bottom: 0px !important;
+  }
+  .subscribe-box {
+    padding-top: 0px !important;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .belanja {
+    display: none;
+  }
+  .tentang-kami {
+    display: none;
+  }
+  .lainnya {
+    display: none;
+  }
+  .aplikasi-seluler {
+    text-align: center;
 
+    padding: 20px;
+  }
+  .footer-sosmed {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+  }
+  .h5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 55px;
+  }
+  .btn-kategori {
+    display: none;
+  }
+  /* .count-cart2 {
+    position: absolute;
+    top: 35px;
+  } */
+}
+@media (max-width: 1115px) {
+  .img-banner1 {
+    display: none;
+  }
+  .recommended {
+    padding: 0px !important;
+  }
+  .popular {
+    padding: 0px !important;
+  }
+  .popular-novel {
+    padding: 0px !important;
+  }
+}
+/* @media only screen and (max-width: 375px) {
+  .logo .text-footer-sosmed .icon-sosmed {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+} */
 .merk {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
-
 #navbarDropdown {
   font-family: 'Nunito', sans-serif;
   color: #2470ad;
@@ -39,6 +346,7 @@
 }
 
 .icon-buku {
+  margin-left: 20px;
   font-size: 30px;
   color: #2781ca;
 }
@@ -69,7 +377,7 @@
   margin-right: 20px;
 }
 
-.keranjang {
+.keranjangg {
   font-size: 30px;
   color: #155183;
   margin-right: 50px;
@@ -120,16 +428,16 @@
   width: 500px;
 }
 .carousel {
-  padding-top: 90px;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  padding-top: 70px;
+  /* margin-left: 50px; */
+  /* margin-bottom: 40px; */
   width: 1250px;
 }
 .img1 {
   width: 400px;
-  height: 260px;
+  height: 240px;
   padding-left: 21px;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 .img1-2 {
   width: 400px;
@@ -170,7 +478,7 @@
 
 .text-popular-novel {
   padding-left: 160px;
-  padding-top: 50px;
+  margin-top: 50px;
 
   font-family: Nunito, serif;
   font-size: 24px;
@@ -186,7 +494,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
-  margin-top: 40px;
+  padding-top: 20px;
 }
 .text-icon {
   font-family: Nunito, serif;
@@ -210,9 +518,7 @@
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
-.icon-sosmed {
-  margin-right: 30px;
-}
+
 .wa-icon {
   width: 100px;
   padding: 20px;
@@ -407,7 +713,7 @@ input[type='submit'] {
   height: 18px;
   width: 18px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 65px;
 }
 .count-cart2 {
@@ -420,7 +726,7 @@ input[type='submit'] {
   height: 19px;
   width: 26px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 60px;
 }
 .pesanan {
@@ -696,9 +1002,19 @@ input::-webkit-inner-spin-button {
 .info-pemesanan {
   font-family: 'Nunito', sans-serif;
 }
+.rincian-pembayaran {
+  font-family: 'Nunito', sans-serif;
+}
 .rincian-barang {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+.rincian-pengiriman {
+  font-family: 'Nunito', sans-serif;
+}
+.alamat-tujuan {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
 }
 .status-pemesanan {
   background-color: yellow;
@@ -706,4 +1022,26 @@ input::-webkit-inner-spin-button {
 
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+.jumlah-harga {
+  font-size: 14px;
+  color: #5a5a5a;
+
+  border-bottom: 1px solid #d1d1d1;
+}
+.total-biaya {
+  border-bottom: 1px solid #d1d1d1;
+}
+.account-pembayaran {
+  font-size: 14px;
+}
+.metode-pengiriman {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.slick-list {
+  width: 100%;
 }

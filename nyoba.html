@@ -1,56 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <body>
-      <button class="btn" data-target="kotak">Start Animation</button>
-      <button class="btn" data-target="kotak2">Start Animation</button>
-      <button class="tombol" data-target="bulat">Start Animation</button>
-      <button class="tombol" data-target="bulat2">Start Animation</button>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-      <div class="kotak" id="kotak" style="background: #98bf21; height: 100px; width: 100px; display: none; top: 90px; position: absolute"></div>
-      <div class="kotak" id="kotak2" style="background: #98bf21; height: 100px; width: 100px; display: none; top: 200px; position: absolute"></div>
-      <div class="tombol" id="bulat" style="background: #98bf21; height: 100px; width: 100px; display: none; top: 250px; position: absolute"></div>
-      <div class="tombol" id="bulat2" style="background: #98bf21; height: 100px; width: 100px; display: none; top: 300px; position: absolute"></div>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-      // $(document).ready(function () {
-      //   $('div').mouseenter(function () {
-      //     $('div').hide().appendTo('div').show('slow');
-      //     // $('div').mouseleave(function () {
-      //     //   $('div').animate({ top: '100px' });
-      //     // });
-      //   });
-      //   $('div').mouseenter(function () {
-      //     $('div').hide();
-      //   });
-      // });
-      $(document).ready(function () {
-        $('.btn').mouseenter(function () {
-          $('.kotak').css('display', 'block');
-          var target = $(this).data('target');
-          $(`#${target}`).css('display', 'none');
-        });
-      });
-      $(document).ready(function () {
-        $('.tombol').mouseenter(function () {
-          $('.bulat').css('display', 'block');
-          var target = $(this).data('target');
-          $(`#${target}`).css('display', 'none');
-        });
-      });
-      // });
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-      // $(document).ready(function () {
-      //   $('.btn2').mouseenter(function () {
-      //     // $('#kotak2').mouseenter(function () {
-      //     $('#kotak2').css('background-color', 'yellow');
-      //     $('#kotak2').mouseleave(function () {
-      //       $('#kotak2').css('background-color', 'lightgray');
-      //     });
-      //   });
-      // });
-      // });
-    </script>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="lovefromatoz.html" style="text-decoration: none">
+            <div class="col">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="height: 350px">
+                <img src="assets/image/book1.jpg" class="card-img-top" alt="..." style="height: 200px" />
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 12px; color: #212529">S.K. Ali</p>
+                  <h5 class="card-title" style="font-size: 14px; color: #212529">Love from A to Z</h5>
+                  <h5 class="card-title" style="font-size: 15px; color: #0060ae"><b>Rp 93.000</b></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
